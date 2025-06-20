@@ -123,6 +123,41 @@ export default function Home() {
       <Navbar />
 
       <main className="min-h-screen overflow-x-hidden relative">
+        {/* SEO: Hidden structured data for services */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              provider: {
+                "@type": "Organization",
+                name: "OneConnectX",
+              },
+              serviceType: [
+                "Cloud Services",
+                "Data Analytics",
+                "Web Development",
+                "Mobile Development",
+                "Application Support",
+                "Data Management",
+              ],
+              areaServed: "Worldwide",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Technology Services",
+                itemListElement: services.map((service) => ({
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: service.title,
+                    description: service.description,
+                  },
+                })),
+              },
+            }),
+          }}
+        />
         {/* Hero Section */}
         <section
           id="hero"
@@ -755,8 +790,8 @@ export default function Home() {
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
               <p>
-                &copy; 2025 OneConnectX. All rights reserved. Built with ❤️ by
-                LG{" "}
+                &copy; 2025 OneConnectX. All rights reserved. Built with ❤️ and
+                Next.js
               </p>
             </div>
           </div>

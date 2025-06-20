@@ -1,0 +1,31 @@
+{
+    "name": "OneConnectX - Innovation Through Technology",
+    "short_name": "OneConnectX",
+    "description": "We build innovation through technology for the greater good",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1e40af",
+    "theme_color": "#1e40af",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "business",
+        "technology",
+        "productivity"
+    ],
+    "lang": "en-US",
+    "dir": "ltr"
+}
