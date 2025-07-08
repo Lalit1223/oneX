@@ -12,10 +12,10 @@ import {
   ArrowRight,
   Star,
 } from "lucide-react";
-import Navbar from "@/components/ui/Navbar";
-import ParallaxBackground from "@/components/animations/ParallaxBackground";
-import LoadingScreen from "@/components/animations/LoadingScreen";
-import InteractiveElements from "@/components/animations/InteractiveElements";
+import Navbar from "../components/ui/Navbar";
+import ParallaxBackground from "../components/animations/ParallaxBackground";
+import LoadingScreen from "../components/animations/LoadingScreen";
+import InteractiveElements from "../components/animations/InteractiveElements";
 
 // Mouse parallax hook directly in component
 function useMouseParallax(intensity = 1) {
@@ -233,7 +233,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Got any Ideas, Let's Get Connected!
+                Got any Ideas, Let&apos;s Get Connected!
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </motion.button>
 
@@ -697,12 +697,12 @@ export default function Home() {
             </motion.div>
 
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              Let's Build Something Amazing Together
+              Let&apos;s Build Something Amazing Together
             </h2>
             <p className="text-xl mb-12 text-blue-100 max-w-3xl mx-auto">
-              Have a project in mind? We'd love to hear about it. Let's discuss
-              your next innovative project and bring your ideas to life with
-              cutting-edge technology.
+              Have a project in mind? We&apos;d love to hear about it.
+              Let&apos;s discuss your next innovative project and bring your
+              ideas to life with cutting-edge technology.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -790,8 +790,8 @@ export default function Home() {
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
               <p>
-                &copy; 2025 OneConnectX. All rights reserved. Built with ❤️ and
-                Next.js
+                &copy; 2025 OneConnectX. All rights reserved. Built with ❤️ By
+                Lalit Gandhi{" "}
               </p>
             </div>
           </div>
